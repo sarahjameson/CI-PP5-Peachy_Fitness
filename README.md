@@ -351,11 +351,19 @@ Below are some issues that I ran into while creating this project:
 
 ### Automated Testing
 #### Code Validation
-HTML pages - PASSES
-Create post - PASSES
-User profile - PASSES
-Post detail - PASSES
-Edit post - PASSES
+- HTML pages - PASSES
+    - There were only some warnings about using type attributes. I decided to leave them in.
+- CSS pages - PASSES
+- JavaScript files - PASSES
+    - There was a warning - 'template literal syntax' is only available in ES6 (use 'esversion: 6') - that came up. However, I found from Slack that you must configure the validator and turn on ES6. Unfortunately, JSHint does not accept it as default.
+- Python Files - The files in the following apps were put into a PEP8 validator. There were a lot of spacing issues. These have all been rectified now and everything is passing.
+    - Checkout - PASSES
+    - Contact - PASSES
+    - Home - PASSES
+    - Peachy Fitness - PASSES
+    - Products - PASSES
+    - Profiles - PASSES
+    - Shopping bag - PASSES
 
 ### Compatibility Testing
 - The site looks the same on different browsers.
@@ -437,6 +445,13 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 [Back to top ⇧](#)
 
 ## Credits 
+
+Thank you to:
+- Stackoverflow
+- YouTube
+- Code Institute videos
+- Pexels and unsplash
+- Tiny PNG for compressing my images
 
 ## Acknowledgements 
 

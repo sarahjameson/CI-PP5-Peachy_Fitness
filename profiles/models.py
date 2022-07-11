@@ -5,13 +5,6 @@ from django.dispatch import receiver
 from django_countries.fields import CountryField
 
 
-GENDER_CHOICES = (
-    ('Female', 'Female'),
-    ('Male', 'Male'),
-    ('Other', 'Other'),
-)
-
-
 class UsersProfile(models.Model):
     """
     A User Profile model
@@ -42,7 +35,7 @@ def create_update_user_profile(sender, instance, created, **kwargs):
     """
     if created:
         UsersProfile.objects.create(user=instance)
-    instance.usersprofile.save()
-    # else:
-    #     # Existing users: just save the profile
-    #     instance.userprofile.save()
+        instance.usersprofile.save()
+    else:
+        # Existing users: just save the profile
+        instance.userprofile.save()

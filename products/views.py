@@ -16,7 +16,7 @@ def all_products(request):
     direction = None
 
     if request.GET:
-         if 'sort' in request.GET:
+        if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
@@ -30,12 +30,12 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
-         if 'category' in request.GET:
+        if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-         if 'q' in request.GET:
+        if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "You didn't enter a search term")
@@ -99,7 +99,8 @@ def add_product(request):
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request,
-                           ("I'm sorry, there was a failure adding your product. "
+                           ("I'm sorry, there was a failure adding your \
+                            product. "
                             "Please check your form and try again."))
     else:
         product_form = ProductForm()
