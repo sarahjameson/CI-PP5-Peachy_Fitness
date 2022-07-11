@@ -1,6 +1,8 @@
 # Peachy Fitness
 
-insert pic and deployed site links/github
+![](static/media/README/am-i-responsive.png)
+
+[Deployed site](https://peachy-fitness.herokuapp.com/)
 
 ## Table of contents
 1. [Introduction](#Introduction)
