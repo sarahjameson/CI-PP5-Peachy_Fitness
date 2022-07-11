@@ -295,10 +295,10 @@ Below are some issues that I ran into while creating this project:
 
 ## Technologies Used
 ### Main Languages Used
--[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
--[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
--[CSS](https://en.wikipedia.org/wiki/CSS)
--[HTML](https://en.wikipedia.org/wiki/HTML)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [HTML](https://en.wikipedia.org/wiki/HTML)
 
 ### Frameworks, Libraries, Programs and Additional Languages Used
 - [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
